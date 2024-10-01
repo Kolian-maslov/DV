@@ -1,0 +1,285 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #DCD8D3;
+    margin: 0;
+    padding-top: 110px;
+    user-select: none;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gals-Light';
+}
+
+@font-face {
+	font-family: 'Gals-Light';
+	src: url('Gals-Light.eot'); /* IE 9 Compatibility Mode */
+	src: url('Gals-Light.eot') format('embedded-opentype'), /* IE < 9 */
+		url('Gals-Light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('Gals-Light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('Gals-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('Gals-Light.svg') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family:"tt ricordi marmo trial 2";
+    src:url("tt-ricordi-marmo-trial-2.eot?") format("eot"),
+    url("tt-ricordi-marmo-trial-2.woff") format("woff"),
+    url("tt-ricordi-marmo-trial-2.ttf") format("truetype"),
+    url("tt-ricordi-marmo-trial-2.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0px;
+}
+
+
+.logo {
+    width: 80px;
+}
+
+.slider {
+    width: 100%;
+    max-width: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px 120px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.TX {
+    font-size: 48px;
+    font-weight: 400px;
+    font-family: "tt ricordi marmo trial 2";
+}
+
+
+.description {
+    margin: 40px 15%;
+    font-size: 20px;
+    font-family: 'Gals-Light';
+    
+    
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+.button2 {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Gals-Light'
+}
+
+.button2:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+
+
+
+@media screen and (max-width: 390px) {
+    .header{
+        padding: 5px 0px;
+    }
+    .logo {
+        width: 48px;
+    }
+
+    .btn {
+        top: 30%;
+        padding: 10px 15px;
+        font-size: 14px;  
+    }
+
+    .TX {
+        font-size: 24px;  
+    }
+    .description {
+        margin: 40px 0%;
+        font-size: 14px;
+        
+    }
+    .button2 {
+       
+        font-size: 16px;
+        
+    }
+}
+
+
+@media screen and (min-width: 390px) {
+    .header{
+        padding: 5px 0px;
+    }
+    .logo {
+        width: 48px;
+    }
+    .btn {
+        top: 30%;
+        padding: 10px 15px;
+        font-size: 14px;  
+    }
+    .TX {
+        font-size: 24px;  
+    }
+
+    .description {
+        margin: 20px 0%;
+        font-size: 14px;
+        
+    }
+
+    .button2 {
+       
+        font-size: 16px;
+        
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+    .header{
+        padding: 20px 0px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .btn {
+        top: 30%;
+        padding: 10px 15px;
+        font-size: 14px;  
+    }
+    .description {
+        margin: 20px 0%;
+        font-size: 16px;
+        
+    }
+
+    .button2 {
+       
+        font-size: 16px;
+        
+    }
+    .TX {
+        font-size: 24px;
+        
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .description {
+        margin: 20px 10%;
+        font-size: 20px;
+        
+    }
+    .button2 {
+       
+        font-size: 24px;
+        
+    }
+    .TX {
+        font-size: 36px;
+        
+    }
+
+    .btn {
+        top: 50%;
+        padding: 10px 18px;
+        font-size: 20px;  
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .btn {
+        top: 50%;
+        padding: 10px 20px;
+        font-size: 24px;  
+    }
+
+    .description {
+        margin: 40px 15%;
+        font-size: 20px;
+        font-family: 'Gals-Light';
+        
+        
+    }
+}
+
+
+@media screen and (min-width: 1200px) {}
+
+
+@media screen and (min-width: 1400px) {
+
+}
+
+
+@media screen and (min-width: 1900px) {
+  
+}
